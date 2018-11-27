@@ -1,0 +1,32 @@
+{
+  "name": "cucumber-wdioframework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodrigovolkmer/cucumber-wdioFramework.git"
+  },
+  "keywords": [
+    "cucumber",
+    "wdio",
+    "selenium"
+  ],
+  "author": "Rodrigo Volkmer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodrigovolkmer/cucumber-wdioFramework/issues"
+  },
+  "homepage": "https://github.com/rodrigovolkmer/cucumber-wdioFramework#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "wdio-cucumber-framework": "^2.2.8",
+    "wdio-dot-reporter": "0.0.10",
+    "wdio-selenium-standalone-service": "0.0.11",
+    "wdio-spec-reporter": "^0.1.5",
+    "webdriverio": "^4.14.0"
+  }
+}
