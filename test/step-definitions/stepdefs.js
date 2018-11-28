@@ -17,7 +17,7 @@ When('Its morning|afternoon|evening', function () {
   const d = new Date();
   const hourOfTheDay = d.getHours();
 
-  if (hourOfTheDay >= 18 || hourOfTheDay <= 23) {
+  if (hourOfTheDay >= 18 && hourOfTheDay <= 23) {
     //  evening
     greetings = 'Good Evening';
   } else if (hourOfTheDay >= 0 && hourOfTheDay < 12) {
