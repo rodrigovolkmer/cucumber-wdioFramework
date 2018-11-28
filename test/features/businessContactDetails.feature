@@ -5,10 +5,18 @@ Feature: LocalSeach Search for Businesses
     so I choose from the results 
     and get the contact details of my preference
     
-    Scenario: LocalSearch Search for Business and Get the Business details
+    Scenario Outline: LocalSearch Search for Business and Get the Business details
         Given I go to the LocalSearch homepage
-        When I search for "Landscaper" on the search field
+        When I search for "<business>" on the search field
         And I get a list of results
         And I select the first result
         Then I expect to see the business "contact" details
         And I expect to see the business "services" details
+
+    Examples:
+        | business |
+        | Landscaper |
+        | Gardeners |
+        | Mechanics |
+        | Carpet Cleaning |
+        | Cleaners |
